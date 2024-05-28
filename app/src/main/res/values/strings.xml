@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PB Agenda</string>
+    <string-array name="allowed_hours_string_array">
+        <item>09h30min ás 10h30min</item>
+        <item>10h30min ás 11h30min</item>
+        <item>11h30min ás 12h30min</item>
+        <item>12h30min ás 13h30min</item>
+        <item>13h30min ás 14h30min</item>
+        <item>14h30min ás 15h30min</item>
+        <item>15h30min ás 16h30min</item>
+        <item>16h30min ás 17h30min</item>
+        <item>17h30min ás 18h30min</item>
+    </string-array>
+</resources>

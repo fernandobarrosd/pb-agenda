@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.CreateSchedulingFragment"
+    android:background="@color/brown"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/scheduling_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horário do agendamento"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/allowed_hours_spinner"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:background="@color/white"
+        tools:listitem="@layout/layout_allowed_hour_spinner_item"
+        app:layout_constraintTop_toBottomOf="@id/scheduling_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_create_scheduling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/allowed_hours_spinner"
+        android:text="Agendar"
+        android:textAllCaps="false"
+        android:layout_marginTop="40dp"
+        android:background="@color/blue"
+        android:textColor="@color/white" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
